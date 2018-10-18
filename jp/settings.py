@@ -140,7 +140,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
+STATICFILES_DIRS = [
+    STATIC_ROOT
+]
 
 # Cors Requests
 CORS_ORIGIN_ALLOW_ALL = True
